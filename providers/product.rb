@@ -45,6 +45,6 @@ end
 
 def webpicmdline
   @webpicmdline ||= begin
-    "#{node['webpi']['home']}\\WebpiCmdLine.exe"
+    "#{node['webpi']['home']}\\WebpiCmdLine.exe /Log:#{node.webpi.log}"
   end
 end
